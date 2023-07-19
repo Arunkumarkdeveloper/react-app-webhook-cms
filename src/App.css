@@ -1,0 +1,285 @@
+* {
+  font-family: "Inter";
+  font-size: 15px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* main container  */
+
+.main-container {
+  width: 35%;
+}
+
+.group-field{
+  margin-bottom: 35px;
+}
+
+.group-field input {
+  border: 1px solid gray;
+  width: 96%;
+  outline: none;
+  padding: 8px;
+}
+
+
+.savebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+.savebutton button {
+  padding: 16px 34px;
+  background: #396c84;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 34px;
+  color: white;
+}
+
+/* main container  */
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px !important;
+  border:2px solid #6fc4ec;
+  padding: 30px 20px 20px 30px;
+}
+/* sub dropdown starts */
+
+.child-dropdown-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.child-dropdown-items .list-circle-item {
+  margin-right: 10px;
+}
+
+.child-dropdown-items select {
+  margin-right: 10px;
+}
+
+/* sub dropdown ends  */
+
+/* filter starts  */
+
+.filter-field {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.filter-field .list-circle-item {
+  margin-right: 10px;
+  background-color: grey;
+}
+
+select#schema {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  border: 1px solid darkgray;
+}
+
+/* filter end  */
+
+/* common css starts */
+
+div .list-circle-item {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: -2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: transparent;
+  padding: 5px;
+}
+
+.delete-item button {
+  background-color: #d9d9d9;
+  border: 1px solid #f2fbf9;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  background-color: #396c84;
+  height: 55px;
+  align-items: center;
+  padding-left: 35px;
+}
+
+header .text-heading {
+  padding: 1%;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+}
+header span {
+  color: white;
+  padding: 1%;
+  font-size: 20px;
+  padding-right: 0;
+}
+.icon {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-left: 15px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.Template {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-group span {
+  position: absolute;
+  font-size: 90px;
+  color: #5ddb78;
+  bottom: -18px;
+  left: -19px;
+}
+
+.group span {
+  position: absolute;
+  font-size: 90px;
+  color: red;
+  bottom: -18px;
+  left: -19px;
+}
+.idea-group {
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  margin: 30px 0;
+}
+
+.user-group,
+.group {
+  position: relative;
+}
+
+.add-item-shema {
+  display: flex;
+  justify-content: left
+  ;
+  margin-top: 20px;
+}
+.add-item-shema button {
+  background-color: #396c84;
+  padding: 12px 20px;
+  border-radius: 20px;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  height: 40px;
+  background: lightgray;
+  padding: 25px;
+}
+
+/* common css ends */
+
+/* action button start */
+
+.button-field {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  justify-content: left;
+  margin-top: 100px;
+}
+
+.button-field button {
+  background-color: #2ca546;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 25px !important;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  border-radius: 5px;
+  cursor: pointer;  
+}
+
+.button-field button:nth-child(2){
+  background-color: #e35151;
+ 
+}
+/* action button ends */
+/* responsive css */
+
+@media only screen and (max-width: 400px), (max-width: 600px) {
+  .main-container {
+    width: 100%;
+  }
+  .group-field input {
+    border: 1px solid gray;
+    width: 90%;
+    outline: none;
+    padding: 8px;
+}
+}
+@media only screen and  (max-width: 900px) {
+  .main-container {
+    width: 70%;
+  }
+}
